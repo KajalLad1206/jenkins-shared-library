@@ -27,9 +27,11 @@ class Docker implements Serializable {
                 script.sh "echo $script.PWD | docker login -u $script.USER  --password-stdin"
         }
     }
-     def dockerBuild(String imageName){
+
+     def dockerImageBuild(String imageName){
          script.sh "docker build -t $imageName ."
      }
+
     def dockerImagePush(String imageName){
         script.sh "docker push $imageName"
     }
