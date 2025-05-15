@@ -4,6 +4,7 @@ def call(String imageName)
 {
     return new Docker(this).buildDockerImage(imageName)
 
+    //this function used when you dont want use package like src/com.example
     //    withCredentials([
     //            usernamePassword(credentialsId: 'dockerhub-credential', usernameVariable: 'USER', passwordVariable: 'PWD')
     //    ]) {
