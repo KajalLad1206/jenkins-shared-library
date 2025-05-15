@@ -1,5 +1,5 @@
-
 #!/bin/usr/env groovy
+
 def call()
 {
     withCredentials([
