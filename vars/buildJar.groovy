@@ -2,5 +2,5 @@
 
 def call(){
      echo "building the jar file..!"
-     mvn clean package
+     mvn clean package;
 }
